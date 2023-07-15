@@ -2,7 +2,7 @@ public class DZ1 {
     public static void task1(float weight, int age) {
         String name = "Anastasia";
         System.out.println("Task1");
-        System.out.println("Name: " + name + ", Weight: " + weight + ", Age: " + age + ". ");
+        System.out.println("Name : " + name + ", Weight : " + weight + ", Age : " + age + ". ");
     }
 
     public static void task2(int a, int b) {
