@@ -1,7 +1,7 @@
 public class DZ1 {
     public static void task1(float weight, int age) {
-        String name = "Anastasia";
-        System.out.println("Task1");
+        String name = "Anastasia  ";
+        System.out.println("Task 1  ");
         System.out.println("Name : " + name + ", Weight : " + weight + ", Age : " + age + ". ");
     }
 
@@ -9,7 +9,7 @@ public class DZ1 {
         int c = a;
         a = b;
         b = c;
-        System.out.println("Task2");
+        System.out.println("Task 2");
         System.out.println("a = " + a);
         System.out.println("b = " + b);
     }
@@ -18,7 +18,7 @@ public class DZ1 {
         a = a + b;
         b = a - b;
         a = a - b;
-        System.out.println("Task3");
+        System.out.println("Task3 ");
         System.out.println("a = " + a);
         System.out.println("b = " + b);
     }
