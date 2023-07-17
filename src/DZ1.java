@@ -9,7 +9,7 @@ public class DZ1 {
         int c = a;
         a = b;
         b = c;
-        System.out.println("Task2");
+        System.out.println("Task 2");
         System.out.println("a = " + a);
         System.out.println("b = " + b);
     }
