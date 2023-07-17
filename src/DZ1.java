@@ -1,7 +1,7 @@
 public class DZ1 {
     public static void task1(float weight, int age) {
-        String name = "Anastasia";
-        System.out.println("Task1");
+        String name = "Anastasia  ";
+        System.out.println("Task 1  ");
         System.out.println("Name : " + name + ", Weight : " + weight + ", Age : " + age + ". ");
     }
 
