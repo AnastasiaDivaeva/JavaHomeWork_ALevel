@@ -19,8 +19,8 @@ public class DZ1 {
         b = a - b;
         a = a - b;
         System.out.println("Task3");
-        System.out.println("a = " + a);
-        System.out.println("b = " + b);
+        System.out.println(" a = " + a);
+        System.out.println(" b = " + b);
     }
 
     public static void main(String[] args) {
