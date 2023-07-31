@@ -1,5 +1,7 @@
 package ua.divaeva.hw4;
 
+import ua.divaeva.hw6.Phone;
+
 import java.util.Random;
 
 public class Task1 {
@@ -25,6 +27,7 @@ public class Task1 {
         for (int x : inputRandomValues) {
             geometric *= x;
         }
-        System.out.println("geometric average: " + (int) Math.sqrt(geometric));
+        double geometricAverage = Math.pow(geometric, 1.0 / inputRandomValues.length);
+        System.out.println("geometric average: " + (int) geometricAverage);
     }
 }

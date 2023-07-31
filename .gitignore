@@ -30,3 +30,4 @@ bin/
 src/examples
 .idea
 dz2.iml
+/src/ArrFinder.java

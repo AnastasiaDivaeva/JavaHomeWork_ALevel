@@ -20,7 +20,7 @@ public class Task1 {
         a = a + b;
         b = a - b;
         a = a - b;
-        System.out.println("Task3 ");
+        System.out.println("examples.Task3 ");
         System.out.println(" a = " + a);
         System.out.println(" b = " + b);
     }
