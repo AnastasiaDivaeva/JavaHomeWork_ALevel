@@ -4,7 +4,7 @@ public class Task1 {
     public static void main(String[] args) {
         Phone phone1 = new Phone("380668879397", 188.0, "Samsung");
         Phone phone2 = new Phone("380502152289", "iPhone");
-        Phone phone3 = new Phone();
+        Phone phone3 = new Phone("380930405060", -1, "Huawei");
 
         System.out.println("Phone1");
         System.out.println("Number: " + phone1.getNumber());

@@ -1,4 +1,4 @@
-package ua.divaveva.hw5;
+package ua.divaeva.hw5;
 
 public class Task3 {
     public static void main(String[] args) {

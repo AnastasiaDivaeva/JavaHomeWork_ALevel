@@ -1,15 +1,19 @@
-package ua.divaveva.hw5;
+package ua.divaeva.hw5;
 
 import java.util.Random;
 
 public class Task1 {
     public static void main(String[] args) {
-        int[][] matrix = new int[4][3];
+        int[][] matrix = generateMatrix(4, 3);
+        printMatrix(matrix);
+    }
 
-
+    public static int[][] generateMatrix(int rows, int cols) {
+        int[][] matrix = new int[rows][cols];
         int matrixValue = 1;
-        for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[i].length; j++) {
+
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
                 if (i % 2 == 0) {
                     matrix[i][j] = matrixValue++;
                 } else {
@@ -18,6 +22,10 @@ public class Task1 {
             }
         }
 
+        return matrix;
+    }
+
+    public static void printMatrix(int[][] matrix) {
         for (int[] row : matrix) {
             for (int element : row) {
                 System.out.print(element + " ");
@@ -25,5 +33,4 @@ public class Task1 {
             System.out.println();
         }
     }
-
 }

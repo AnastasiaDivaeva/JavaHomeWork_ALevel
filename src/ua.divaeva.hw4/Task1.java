@@ -9,25 +9,41 @@ public class Task1 {
         int minValue = 1;
         int maxValue = 11;
 
-        int[] inputRandomValues = new int[400];
+        int[] inputRandomValues = generateRandomArray(minValue, maxValue, 400);
+
+        double arithmeticAverage = calculateArithmeticAverage(inputRandomValues);
+        System.out.println("arithmetic average: " + (int) arithmeticAverage);
+
+        double geometricAverage = calculateGeometricAverage(inputRandomValues);
+        System.out.println("geometric average: " + (int) geometricAverage);
+    }
+
+    public static int[] generateRandomArray(int minValue, int maxValue, int length) {
+        int[] randomArray = new int[length];
         Random rand = new Random();
 
-        for (int i = 0; i < inputRandomValues.length; i++) {
-            inputRandomValues[i] = rand.nextInt(maxValue - minValue) + minValue;
+        for (int i = 0; i < length; i++) {
+            randomArray[i] = rand.nextInt(maxValue - minValue + 1) + minValue;
         }
 
+        return randomArray;
+    }
+
+    public static double calculateArithmeticAverage(int[] array) {
         double sum = 0;
-        for (int x : inputRandomValues) {
+        for (int x : array) {
             sum += x;
         }
 
-        System.out.println("arithmetic average: " + (int) (sum / inputRandomValues.length));
+        return sum / array.length;
+    }
 
+    public static double calculateGeometricAverage(int[] array) {
         double geometric = 1;
-        for (int x : inputRandomValues) {
+        for (int x : array) {
             geometric *= x;
         }
-        double geometricAverage = Math.pow(geometric, 1.0 / inputRandomValues.length);
-        System.out.println("geometric average: " + (int) geometricAverage);
+
+        return Math.pow(geometric, 1.0 / array.length);
     }
 }

@@ -1,4 +1,4 @@
-package ua.divaveva.hw5;
+package ua.divaeva.hw5;
 
 import java.util.Random;
 
