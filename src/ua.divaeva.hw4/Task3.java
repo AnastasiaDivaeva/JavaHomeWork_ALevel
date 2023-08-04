@@ -1,14 +1,12 @@
 package ua.divaeva.hw4;
 
-import java.util.Arrays;
 import java.util.Random;
 
 public class Task3 {
     public static void main(String[] args) {
         int[] inputRandomValues = generateRandomArray(2000, 1, 2000);
-        int[] copiedArray = Arrays.copyOf(inputRandomValues, inputRandomValues.length);
-        replaceEvenNumbersWithZero(copiedArray);
-        printArray(copiedArray);
+        replaceEvenNumbersWithZero(inputRandomValues);
+        printArray(inputRandomValues);
     }
 
     public static int[] generateRandomArray(int length, int minValue, int maxValue) {
@@ -36,6 +34,5 @@ public class Task3 {
         }
     }
 }
-
 
 

@@ -3,15 +3,8 @@ package ua.divaeva.hw6;
 public class Task1 {
     public static void main(String[] args) {
         Phone phone1 = new Phone("380668879397", 188.0, "Samsung");
-
         Phone phone2 = new Phone("380502152289", "iPhone");
-        phone2.weight = 7.98;
-
-        Phone phone3 = new Phone();
-        phone3.number = "0999999";
-        phone3.model="S12";
-        phone3.weight=215;
-
+        Phone phone3 = new Phone("380930405060", -1, "Huawei");
 
         System.out.println("Phone1");
         System.out.println("Number: " + phone1.getNumber());
