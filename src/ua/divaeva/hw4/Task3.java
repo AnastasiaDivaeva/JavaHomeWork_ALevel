@@ -1,14 +1,14 @@
 package ua.divaeva.hw4;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class Task3 {
     public static void main(String[] args) {
         int[] inputRandomValues = generateRandomArray(2000, 1, 2000);
-        replaceEvenNumbersWithZero(inputRandomValues);
-        printArray(inputRandomValues);
+        int[] modifiedArray = replaceEvenNumbersWithZero(inputRandomValues);
+        printArray(modifiedArray);
     }
-
     public static int[] generateRandomArray(int length, int minValue, int maxValue) {
         int[] randomArray = new int[length];
         Random random = new Random();
@@ -20,12 +20,14 @@ public class Task3 {
         return randomArray;
     }
 
-    public static void replaceEvenNumbersWithZero(int[] array) {
+    public static int[] replaceEvenNumbersWithZero(int[] array) {
+        int[] copiedArray = Arrays.copyOf(array, array.length);
         for (int i = 0; i < array.length; i++) {
             if (array[i] % 2 == 0) {
                 array[i] = 0;
             }
         }
+        return copiedArray;
     }
 
     public static void printArray(int[] array) {
@@ -34,5 +36,6 @@ public class Task3 {
         }
     }
 }
+
 
 
